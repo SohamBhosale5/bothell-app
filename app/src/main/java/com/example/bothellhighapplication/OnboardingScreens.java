@@ -26,6 +26,7 @@ public class OnboardingScreens extends AppCompatActivity {
     Window window;
     boolean signupstatus=false;
     @Override
+    //For creating onBoarding Screens View
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //For hiding title bar
@@ -54,10 +55,10 @@ public class OnboardingScreens extends AppCompatActivity {
                 Intent intent;
                 if(btn_text.equals("Finish")){
                     if(signupstatus) {
-                        intent = new Intent(OnboardingScreens.this, MainActivity.class);}
+                        intent = new Intent(OnboardingScreens.this, SignUp.class);}
 
                     else{
-                        intent = new Intent(OnboardingScreens.this, NavigationDrawer.class);
+                        intent = new Intent(OnboardingScreens.this, SignUp.class);
                     }
                     startActivity(intent);
                 } else {
@@ -74,6 +75,7 @@ public class OnboardingScreens extends AppCompatActivity {
         });
     }
 
+    //Adding dots indicator on the bottom of the view
     public void addDotsIndicator(int position){
         mDots = new TextView[3];
         mDotsLayout.removeAllViews();

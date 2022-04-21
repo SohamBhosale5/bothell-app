@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
+//SliderAdapter to help load Onboarding Screens
 public class SliderAdapter extends PagerAdapter {
     Context context;
     LayoutInflater layoutInflater;
@@ -24,13 +25,14 @@ public class SliderAdapter extends PagerAdapter {
     };
 
     public String[] slider_heading = {
-            "Capture", "Upload", "Results"
+            "Upload", "Update", "Track"
     };
 
     public String[] slider_description = {
-            "Take a picture of your skin to check what disease you have.",
-            "Upload image for the app to analyze",
-            "Get a thorough analysis of your condition, along with possible treatment"
+            "Upload your schedule",
+            "Get updated information on extracurriculars and the lunch menu",
+            "Keep Track of the Latest School Events"
+
     };
 
     @Override
@@ -42,6 +44,8 @@ public class SliderAdapter extends PagerAdapter {
     public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
         return view == (RelativeLayout) object;
     }
+
+    //Instantiating the onboarding item
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position){

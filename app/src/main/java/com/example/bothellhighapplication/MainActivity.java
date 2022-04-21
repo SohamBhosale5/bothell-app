@@ -7,10 +7,12 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
+import android.widget.Toast;
 
-
+//For showing the title of the app
 public class MainActivity extends AppCompatActivity {
     Window window;
+    //Creating view for onCreate including showing logo
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,13 +24,14 @@ public class MainActivity extends AppCompatActivity {
         }
         setContentView(R.layout.activity_main);
         Handler handler = new Handler();
+
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intent = new Intent(MainActivity.this, OnboardingScreens.class);
                 startActivity(intent);
             }
-        },10000);
+        },6500);
 
     }
 

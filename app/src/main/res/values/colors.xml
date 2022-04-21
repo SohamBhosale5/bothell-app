@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="gray">#888</color>
+    <color name="cal_blue">#0000FF</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -9,4 +11,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="status_bar_color">#6E94E8</color>
     <color name="bothell_blue">#02427F</color>
+    <color name="blue">#0000FF</color>
 </resources>

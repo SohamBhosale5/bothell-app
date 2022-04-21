@@ -11,14 +11,14 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Extracurriculars"
+        android:text="Lunch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textSize="30dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_marginTop="20dp"
-        android:id="@+id/extracurr_recycler"
+        android:id="@+id/lunch_recycler"
         android:layout_width="409dp"
         android:layout_height="710dp"
         app:layout_constraintBottom_toBottomOf="parent"

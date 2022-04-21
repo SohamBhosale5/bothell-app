@@ -10,6 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BothellHighApplication">
         <activity
+            android:name=".ui.calendar.WeekViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.calendar.EventEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SigningIn"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false"
+            android:label="@string/title_activity_sign_in"
+            android:theme="@style/Theme.BothellHighApplication.NoActionBar" />
+        <activity
             android:name=".NavigationDrawer"
             android:exported="false"
             android:label="@string/title_activity_navigation_drawer"
